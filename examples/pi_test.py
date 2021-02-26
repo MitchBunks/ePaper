@@ -26,11 +26,13 @@ try:
     # Drawing on the image
     font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 15)
     font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
+    font36 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 36)
     
     image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame   
     draw = ImageDraw.Draw(image)
     
-    draw.text((50, 50), 'Hello World!', font = font24, fill = 0)
+    draw.text((50, 50), 'Hello World!', font = font36, fill = 0)
+    draw.text((100, 50), 'My Name Is Bunko', font = font24, fill = 0)
     epd.display(epd.getbuffer(image))
     time.sleep(2)
     
