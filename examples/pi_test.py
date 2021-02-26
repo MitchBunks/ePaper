@@ -30,7 +30,7 @@ try:
     image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame   
     draw = ImageDraw.Draw(image)
     
-    draw.text((120, 60), 'Hello World!', font = font15, fill = 0)
+    draw.text((60, 60), 'Hello World!', font = font15, fill = 0)
     epd.display(epd.getbuffer(image))
     time.sleep(2)
     
