@@ -31,6 +31,8 @@ try:
     draw = ImageDraw.Draw(image)
     
     draw.text((120, 60), 'Hello World!', font = font15, fill = 0)
+    epd.display(epd.getbuffer(image))
+    time.sleep(2)
     
     logging.info("Goto Sleep...")
     epd.sleep()
