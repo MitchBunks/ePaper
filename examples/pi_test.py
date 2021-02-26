@@ -32,7 +32,7 @@ try:
     draw = ImageDraw.Draw(image)
     
     draw.text((10, 10), 'BunkoPi', font = font36, fill = 0)
-    draw.text((5, 80), 'Great things come in small packages!', font = font15, fill = 0)
+    draw.text((1, 80), 'Great things come in small packages!', font = font15, fill = 0)
     epd.display(epd.getbuffer(image))
     time.sleep(2)
     
