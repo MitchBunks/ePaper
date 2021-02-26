@@ -31,8 +31,8 @@ try:
     image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame   
     draw = ImageDraw.Draw(image)
     
-    draw.text((30, 10), 'Hello World!', font = font36, fill = 0)
-    draw.text((10, 80), 'My Name Is Bunko', font = font24, fill = 0)
+    draw.text((30, 10), 'BunkoPi', font = font36, fill = 0)
+    draw.text((20, 80), 'Great things come in small packages!', font = font15, fill = 0)
     epd.display(epd.getbuffer(image))
     time.sleep(2)
     
